@@ -1,0 +1,165 @@
+/* lead_form.css */
+
+/* Header Styles */
+/* lead_form.css */
+
+/* Global Layout */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.form-container {
+    flex: 1; /* Ensures that the form container takes up all available space */
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 10vh auto; /* Centered form with margin on top */
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Header Styles */
+.main-header {
+    background: linear-gradient(to right, #1a1f29, #3a4c63); /* Darker left, lighter right */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-container {
+    flex: 1; /* This ensures the content takes up the remaining space, pushing the footer down */
+}
+/* Footer Styling */
+.main-footer {
+    background: linear-gradient(to right, #1a1f29, #3a4c63); /* Gradient effect */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; /* Ensures footer is pushed to the bottom when content is short */
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Form Field Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Increased gap between form groups */
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.submit-btn {
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #2980b9;
+}
+
+h3 {
+    font-size: 1.3em; /* Slightly smaller than h2 */
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.disclaimer-text {
+    font-size: 0.8em;  /* Make the text smaller */
+    color: #666;       /* Light grey color */
+    margin-top: 10px;
+    line-height: 1.4;
+    text-align: justify;
+}
+

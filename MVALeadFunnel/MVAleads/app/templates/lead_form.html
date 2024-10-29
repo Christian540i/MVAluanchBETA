@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lead Submission Form</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'lead_form.css' %}">
+</head>
+<body>
+    <div class="page-container"> <!-- Container for entire page content -->
+
+        <!-- Header Section -->
+        <header class="main-header">
+            <div class="header-container">
+                <h1>MVA Lead Submission</h1>
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/submit-lead">Submit Lead</a></li>
+                        <li><a href="/about">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Form Section -->
+        <div class="form-container">
+            <h2>Submit Your Lead</h2>
+
+            <form method="post">
+                {% csrf_token %}
+                <div>
+                    <h3>{{ form.first_name.label_tag }}</h3>
+                    {{ form.first_name }}
+                </div>
+                <div>
+                    <h3>{{ form.last_name.label_tag }}</h3>
+                    {{ form.last_name }}
+                </div>
+                <div>
+                    <h3>{{ form.email.label_tag }}</h3>
+                    {{ form.email }}
+                </div>
+                <div>
+                    <h3>{{ form.phone_number.label_tag }}</h3>
+                    {{ form.phone_number }}
+                </div>
+                <div>
+                    <h3>{{ form.insured.label_tag }}</h3>
+                    {{ form.insured }}
+                </div>
+                <div>
+                    <h3>{{ form.commercial_vehicle.label_tag }}</h3>
+                    {{ form.commercial_vehicle }}
+                </div>
+                <div>
+                    <h3>{{ form.fracture.label_tag }}</h3>
+                    {{ form.fracture }}
+                </div>
+                <div>
+                    <h3>{{ form.rear_end.label_tag }}</h3>
+                    {{ form.rear_end }}
+                </div>
+                <div>
+                    <h3>{{ form.passenger.label_tag }}</h3>
+                    {{ form.passenger }}
+                </div>
+                <div>
+                    <h3>{{ form.pedestrian.label_tag }}</h3>
+                    {{ form.pedestrian }}
+                </div>
+                <button type="submit" class="submit-btn">SUBMIT MY CLIAM</button>
+                <p class="disclaimer-text">
+                    By clicking the “Submit My Claim” button, you certify that you have provided your legal name and your own phone number, you agree to the Terms and Conditions and Privacy Policy and authorize Total Auto Accident Support and its partners to contact you by email or at the phone number you entered using automated technology including recurring auto-dialers, pre-recorded messages, and text messages, even if your phone is a mobile number or is currently listed on any state, federal, or corporate “Do Not Call” list. You understand that your telephone company may impose charges on you for these contacts, and that you can revoke this consent at any time. For SMS campaigns Text STOP to cancel and HELP for help. Message and data rates may apply. By clicking the “Submit My Claim” button and submitting this form, I affirm that I have read and agree to this Site's Terms and Conditions (including the arbitration provision and the E-SIGN consent) and Privacy Policy and agree to receive email from Complete Credit Match and affiliated brands that may be of interest to you.
+                </p>
+            </form>
+            
+        </div>
+
+        <!-- Footer Section -->
+        <footer class="main-footer">
+            <div class="footer-container">
+                <p>&copy; 2024 MVA Lead Submission | <a href="/privacy-policy">Privacy Policy</a></p>
+            </div>
+        </footer>
+
+    </div> <!-- End of page-container -->
+</body>
+</html>

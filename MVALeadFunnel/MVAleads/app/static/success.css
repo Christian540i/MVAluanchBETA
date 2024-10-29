@@ -1,0 +1,105 @@
+/* Global Font and Layout */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+.main-header {
+    background: linear-gradient(to right, #1a1f29, #3a4c63); /* Darker left, lighter right */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Thank You Message Section */
+.thank-you-container {
+    flex: 1;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f9;
+}
+
+.thank-you-container h2 {
+    font-size: 2.2em;
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.thank-you-container p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* Footer Styling */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-container {
+    flex: 1; /* This ensures the content takes up the remaining space, pushing the footer down */
+}
+/* Footer Styling */
+.main-footer {
+    background: linear-gradient(to right, #1a1f29, #3a4c63); /* Gradient effect */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; /* Ensures footer is pushed to the bottom when content is short */
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}

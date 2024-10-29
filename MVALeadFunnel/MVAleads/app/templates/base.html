@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}ACCIDENT MONEY{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'base.css' %}">
+</head>
+<body>
+
+<div class="page-container">
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="header-container">
+            <!-- Logo and Heading Group -->
+            <div class="logo-heading">
+                <img src="{% static 'images/logo-high.png' %}" alt="Logo" class="header-logo">
+                <h1>ACCIDENT MONEY</h1>
+            </div>
+            
+            <!-- Navigation -->
+            <nav>
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</div>
+
+<!-- Main Content Section -->
+<div class="content-page-container">
+    {% block content %}{% endblock %}
+</div>
+
+<!-- Footer Section -->
+<footer class="main-footer">
+    <div class="footer-container">
+        <p>&copy; 2024 The Accident Money | <a href="{% url 'privacy' %}">Privacy Policy</a> | <a href="{% url 'terms' %}">Terms and Services</a></p>
+    </div>
+</footer>
+
+</body>
+</html>
